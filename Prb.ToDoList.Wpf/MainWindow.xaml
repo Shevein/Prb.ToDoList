@@ -1,0 +1,24 @@
+﻿<Window x:Class="Prb.ToDoList.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prb.ToDoList.Wpf"
+        mc:Ignorable="d"
+        Title="My To Do List" Height="555" Width="392" Foreground="Red" Background="White" Loaded="Window_Loaded">
+    <Grid Background="#FFE6FFC3">
+        <Label Content="My To Do List&#xD;&#xA; " HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Segoe Print" FontSize="24" Foreground="#FF736C6C"/>
+        <TextBox x:Name="txtSubject" HorizontalAlignment="Center" Margin="0,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFE6FFC3" BorderBrush="#FF736C6C"/>
+        <TextBox x:Name="txtText" HorizontalAlignment="Center" Margin="0,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="124" Background="#FFE6FFC3" BorderBrush="#FF736C6C"/>
+        <Label Content="Subject :" HorizontalAlignment="Left" Margin="61,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="Description :&#xD;&#xA;" HorizontalAlignment="Left" Margin="40,99,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lstToDo" Margin="10,300,10,51" Background="#FFE6FFC3" BorderBrush="#FF736C6C"/>
+        <Button x:Name="btnAdd" Content="Add Task" HorizontalAlignment="Center" VerticalAlignment="Top" Height="20" Width="60" Margin="0,228,0,0" Click="BtnAdd_Click" Background="#FF736C6C" Foreground="White"/>
+        <Button x:Name="btnDelete" Content="Delete Task" HorizontalAlignment="Left" Margin="101,483,0,0" VerticalAlignment="Top" Height="24" Width="82" Click="BtnDelete_Click" Background="#FF736C6C" Foreground="White"/>
+        <Button x:Name="btnDeleteAllTasks" Content="Delete all Tasks" HorizontalAlignment="Left" Margin="223,483,0,0" VerticalAlignment="Top" Height="24" Width="83" Click="BtnDeleteAllTasks_Click" Background="#FF736C6C" Foreground="White"/>
+        <Button x:Name="btnEndedTask" Content="Task Succeed&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,270,0,0" VerticalAlignment="Top" Height="24" Width="84" Click="BtnEndedTask_Click" Background="#FF736C6C" Foreground="#FFFFFEFE"/>
+        <Label x:Name="lblNumberOfTasks" Content="# tasks" HorizontalAlignment="Left" Margin="259,264,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <TextBlock x:Name="tbkNumberOfTasks" HorizontalAlignment="Left" Margin="321,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF030303" Width="38" FontWeight="Bold" FontSize="16"/>
+
+    </Grid>
+</Window>
